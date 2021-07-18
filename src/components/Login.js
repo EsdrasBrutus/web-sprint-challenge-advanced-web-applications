@@ -41,7 +41,7 @@ const Login = (props) => {
         <form onSubmit={login}>
           <label>Username</label>
           <input 
-            id="username"
+            id="username" 
             data-testid="username"
             type='text'
             name='username'
