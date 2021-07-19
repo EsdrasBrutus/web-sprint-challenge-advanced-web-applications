@@ -26,7 +26,7 @@ test("Renders the EditForm when editing = true and does not render EditForm when
     const button = screen.getByTestId(/cancel_button/i);
 
     expect(screen.getByTestId(/edit_menu/i)).toBeInTheDocument();
-    expect(button).toBeInTheDocument();
+    //expect(button).toBeInTheDocument();
 
     rerender(<ColorList colors={testData.data} editing={false}/>)
 

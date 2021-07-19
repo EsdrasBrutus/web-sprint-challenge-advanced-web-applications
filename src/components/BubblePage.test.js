@@ -1,7 +1,7 @@
 import React from 'react';
 import MutationObserver from 'mutationobserver-shim';
 
-import { act, render, screen, waitFor} from "@testing-library/react";
+import { render, screen, waitFor} from "@testing-library/react";
 import BubblePage from './BubblePage';
 import { fetchColorService as mockFetch } from '../services/fetchColorService.js';
 
@@ -26,7 +26,7 @@ test("Renders appropriate number of colors passed in through mock", async ()=> {
     expect(await screen.findAllByTestId(/color/i)).toHaveLength(3)  
     
     await waitFor(()=> {  
-      //expect(screen.getByText(/blue/i)).toBeInTheDocument();
+      
     }) 
    screen.debug();
   
